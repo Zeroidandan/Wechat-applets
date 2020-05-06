@@ -1,0 +1,18 @@
+<!-- 王者荣耀案例 -->
+<!-- 单选按钮 -->
+<radio-group bindchange="changeOption">
+        <radio class="radio" value="射手" checked="{{nowType == '射手'}}">射手</radio>
+        <radio class="radio" value="法师" checked="{{nowType == '法师'}}">法师</radio>
+        <radio class="radio" value="坦克" checked="{{nowType == '坦克'}}">坦克</radio>
+        <radio class="radio" value="辅助" checked="{{nowType == '辅助'}}">辅助</radio>
+        <radio class="radio" value="战士" checked="{{nowType == '战士'}}">战士</radio>
+        <radio class="radio" value="刺客" checked="{{nowType == '刺客'}}">刺客</radio>
+</radio-group>
+<view>
+    <view class="y" wx:for="{{arr}}">
+        <image src="http://www.aiqianduan.com:56506/images/wzry/{{item.pic}}.jpg"></image>
+        {{item.cname}}
+        <!-- 遮罩盒子 -->
+        <view class="mask" wx:if="{{nowType != item.hero_type}}"></view>
+    </view>
+</view>

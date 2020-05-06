@@ -1,0 +1,23 @@
+.t{
+    height: 40px;
+    width: 90%;
+    border: 1px solid rgb(182, 178, 178);
+    line-height: 40px;
+   margin: 10px auto;
+}
+.row{
+    display: flex;
+}
+.kuang{
+    flex: 5;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(73, 64, 87);
+}
+button{
+    flex: 1;
+    height: 40px;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: rgb(173, 165, 165);
+}

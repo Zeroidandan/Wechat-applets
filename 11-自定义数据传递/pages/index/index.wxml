@@ -1,0 +1,5 @@
+<view>
+        <my-test info="您好" m="{{m}}" bind:addM="addM"></my-test>
+        <my-test info="Hello" m="{{m}}" bind:addM="addM"></my-test>
+        <my-test info="阿尼哈see有" m="{{m}}" bind:addM="addM"></my-test>
+</view>

@@ -1,0 +1,13 @@
+<!-- 数组循环显示在页面 -->
+<view>
+    <view class="row">
+        <input class="kuang" value="{{content}}" bindinput="changeCon"></input>
+        <button bindtap="insert">插入</button>
+    </view>
+    <!-- {{content}} -->
+    <!-- wx:for（指令） 控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。默认数组的当前项的下标变量名默认为 index，数组当前项的变量名默认为 item -->
+    <view class="t" wx:for="{{arr}}" wx:key="index">
+    <!-- 数组的项用item显示 -->
+     {{item}}
+    </view>
+</view>

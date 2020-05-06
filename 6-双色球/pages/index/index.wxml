@@ -1,0 +1,17 @@
+<!-- 双色球案例 -->
+<view>
+    <wxs src="./tool.wxs" module="tool"></wxs>
+    <view class="bluebox">
+        <!-- wx:for的双大括号中可以写常量 -->
+        <view 
+            class="ball {{tool.checkisArray(nowred,index+1) ? 'cur' : ''}}" 
+            wx:for="{{33}}" 
+            wx:key="index"
+            bindtap="clickOn"
+            data-n="{{index+1}}"
+        >
+            {{index+1}}
+        </view>
+    </view>
+    <button bindtap="sj">随机</button>
+</view>

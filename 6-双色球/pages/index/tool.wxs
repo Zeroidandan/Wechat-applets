@@ -1,0 +1,8 @@
+function checkisArray(arr,n){
+  // wxs是阉割版的JS，它不能调用include方法，可以调用indexof方法
+  return arr.indexOf(n) != -1;
+}
+
+module.exports = {
+  checkisArray:checkisArray
+};

@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<!-- 块级元素 类似div -->
+<view class="box">
+  {{a}}
+</view>
+
+<button bindtap="add" disabled="{{a>=20}}">点击+1</button>
+<button bindtap="cut" disabled="{{a<=10}}">点击-1</button>
+
+<view class="box2" style="width:{{a*10}}px"></view>
