@@ -1,8 +1,13 @@
-function checkisArray(arr,n){
-  // wxs是阉割版的JS，它不能调用include方法，可以调用indexof方法
-  return arr.indexOf(n) != -1;
+function clickred(arr1,n1){
+  return arr1.indexOf(n1) != -1;
+}
+function clickblue(arr2,n2){
+  return arr2.indexOf(n2) != -1;
 }
 
 module.exports = {
-  checkisArray:checkisArray
-};
+  clickred:clickred,
+  clickblue:clickblue
+}
+
+

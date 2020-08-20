@@ -1,18 +1,58 @@
-.bluebox{
-    padding: 10px;
+ .redball{
+   border: 2px solid #333;
+   height: 250px;
+   margin: 5px;
+ }
+ .redball .red{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px #ccc solid;
+  line-height: 30px;
+  text-align: center;
+  float: left;
+  margin: 8px 8px;
+  background:-webkit-radial-gradient(center,#ccc,rgb(139, 136, 136));
+  color: #fff;
 }
-.ball{
-    float: left;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    background: -webkit-radial-gradient(center,rgb(131, 128, 128),#eee);
-    color: #fff;
+.redball .red.cur{
+  background:-webkit-radial-gradient(center,rgb(241, 102, 102),rgb(230, 23, 23));
 }
-.ball.cur{
-    background: -webkit-radial-gradient(center,rgb(206, 29, 29),rgb(240, 119, 119));
+.choose{
+  width: 150px;
+  height: 40px;
+  background: rgb(231, 70, 70);
+  margin: 10px auto;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+.blueball{
+  border: 2px solid #333;
+   height: 150px;
+   margin: 5px;
+}
+.blueball .blue{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px #ccc solid;
+  line-height: 30px;
+  text-align: center;
+  float: left;
+  margin: 8px 8px;
+  background:-webkit-radial-gradient(center,#ccc,rgb(139, 136, 136));
+  color: #fff;
+}
+.blueball .blue.cur{
+  background:-webkit-radial-gradient(center,rgb(96, 105, 240),rgb(32, 46, 122));
+}
+.chooseblue{
+  width: 150px;
+  height: 40px;
+  background: rgb(45, 96, 236);
+  margin: 10px auto;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
 }

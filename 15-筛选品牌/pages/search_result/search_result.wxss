@@ -1,0 +1,27 @@
+.topbox{
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+.carpic{
+  width: 150px;
+  height: 100px;
+}
+.car_grid{
+  width: 95%;
+  padding: 10px;
+  display: flex;
+}
+.picbox{
+  width: 150px;
+  height: 100px;
+}
+.wordbox{
+  flex: 1;
+  padding-left: 20px;
+  font-size: 14px;
+  color: rgb(100, 97, 97);
+}
+.sx_btn{
+  float: right;
+  margin: 8px;
+}

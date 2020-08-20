@@ -1,42 +1,70 @@
 Page({
-    data: {
-       nowred:[5,16,27,32]
-    },
-    // 点击小球
-   clickOn(e){
-       const n =e.target.dataset.n;
-        //console.log('当前点击的是'+n);
-        // 如果小球在数组中删除
-        if (this.data.nowred.includes(n)) {
+  data:{
+      nowsred:[],
+      nowsblue:[]
+  },
+  clickreds(e){
+      const n = e.target.dataset.n;
+      if (this.data.nowsred.includes(n)) {
+          this.setData({
+              nowsred:this.data.nowsred.filter(item => item != n )
+          })
+      }else{
+        if (this.data.nowsred.length < 6) {
             this.setData({
-                nowred:this.data.nowred.filter(item => item !=n)
+                nowsred:[...this.data.nowsred,n]
             })
         }else{
-        // 不在数组中加入
-            //判断是否已经够6个
-            if (this.data.nowred.length < 6) {
-                this.setData({
-                    nowred:[...this.data.nowred,n]
-                   });
-            }else{
-                wx.showToast({
-                  title: '最多只能选6个',
-                  icon:'none',
-                });
-            }
+            wx.showToast({
+              title: '最多选6个',
+              icon:'none'
+            })
         }
-   },
-    // 随机选出6个球   
-   sj(){
-        var arr = [];
-        while(arr.length < 6){
-            let n = parseInt(Math.random() * 33 +1);
-            if (!arr.includes(n)) {
-                arr.push(n);
-            }
-        }
+      }
+  },
+//   随机
+  sjred(){
+      var arr1 = [];
+      while(arr1.length < 6){
+          let n1 = parseInt((Math.random() * 33) + 1);          
+          if (!arr1.includes(n1)) {
+            arr1.push(n1);
+          }
+      }
+      this.setData({
+          nowsred:arr1
+      })
+  },
+  // 蓝色球
+  clickblues(e){
+    const n = e.target.dataset.n;
+    if (this.data.nowsblue.includes(n)) {
+      this.setData({
+        nowsblue:this.data.nowsblue.filter(item => item != n )
+      })
+  }else{
+    if (this.data.nowsblue.length < 1) {
         this.setData({
-            nowred:arr
-        });
-   }
+          nowsblue:[...this.data.nowsblue,n]
+        })
+    }else{
+        wx.showToast({
+          title: '最多选1个',
+          icon:'none'
+        })
+    }
+  }
+  },
+  sjblue(){
+    var arr2 = [];
+    while(arr2.length < 1){
+        let n2 = parseInt((Math.random() * 16) + 1);          
+        if (!arr2.includes(n2)) {
+          arr2.push(n2);
+        }
+    }
+    this.setData({
+        nowsblue:arr2
+    })
+},
 });

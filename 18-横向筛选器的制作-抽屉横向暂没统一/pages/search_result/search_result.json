@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "i-button": "../../iview-dist/button/index",
+    "i-drawer": "../../iview-dist/drawer/index",
+    "drawer_inner":"/components/drawer_inner/drawer_inner",
+    "menu_inner":"/components/menu_inner/menu_inner"
+  }
+}
