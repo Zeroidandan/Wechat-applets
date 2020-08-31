@@ -1,0 +1,26 @@
+Page{
+  background-color: black;
+}
+radio{
+  color: white;
+}
+.hero{
+  width: 50px;
+  height: 95px;
+  float: left;
+  margin: 5px 10px;
+  position: relative;
+  color: white;
+}
+.hero image{
+  width: 50px;
+  height: 50px;
+}
+.hero .mask{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}

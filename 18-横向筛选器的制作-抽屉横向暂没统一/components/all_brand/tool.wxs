@@ -1,6 +1,0 @@
-function getkeysOfObj(obj){
-  // return Object.keys(obj);
-}
-module.exports = {
-  getkeysOfObj:getkeysOfObj
-}

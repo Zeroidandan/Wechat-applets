@@ -1,8 +1,0 @@
-<!--pages/search_result/search_result.wxml-->
-<view>5月7日的主战场</view>
-<van-divider contentPosition="center" customStyle="color: #1989fa;border-color: #1989fa;font-size: 18px;">分割线</van-divider>
-<van-button type="primary">按钮</van-button>
-<van-divider contentPosition="center" customStyle="color: #1989fa;border-color: #1989fa;font-size: 18px;">分割线</van-divider>
-<van-button value="{{ date }}" bind:click="onDisplay">选个日期</van-button>
-<van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm"/>
-<van-divider contentPosition="center" customStyle="color: #1989fa;border-color: #1989fa;font-size: 18px;">分割线</van-divider>

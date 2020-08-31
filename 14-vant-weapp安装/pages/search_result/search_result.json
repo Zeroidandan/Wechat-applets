@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "van-button": "@vant/weapp/button/index",
-    "van-calendar": "@vant/weapp/calendar/index",
-    "van-divider": "@vant/weapp/divider/index"
-  }
-}

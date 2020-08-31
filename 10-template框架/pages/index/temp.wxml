@@ -1,8 +1,0 @@
- <!-- 定义一个模板:name定义 -->
-   <template name="my_template">
-        <view>模板Test</view>
-        <view>{{a}}</view>
-        <view>{{b}}</view>
-        <view>{{c}}</view>
-        <button bindtap="addA">按我A+1</button>
-   </template>
