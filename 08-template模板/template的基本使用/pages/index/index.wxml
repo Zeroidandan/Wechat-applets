@@ -1,0 +1,15 @@
+<view>
+    <!-- 定义模板 -->
+    <!-- 定义一次，使用多次 -->
+    <!-- 无法做数据的私有化 -->
+    <template name="mytemp1">
+        <view>我是模板1</view>
+        <view>{{a}}</view>
+        <view>{{b}}</view>
+        <button bindtap="add">按我a+1</button>
+    </template>
+
+    <template is="mytemp1" data="{{...mydata}}"></template>
+    <template is="mytemp1" data="{{...mydata}}"></template>
+    <template is="mytemp1" data="{{...mydata}}"></template>
+</view>
