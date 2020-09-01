@@ -1,0 +1,10 @@
+<!--mycomponents/test/test.wxml-->
+<view>
+  我是Test组件
+  <view>{{a}}</view>
+  <view>{{b}}</view>
+  <view>{{c}}</view>
+  <view>我收到父组件传递的info是{{info}}</view>
+  <button bindtap="addA">按我A+1</button>
+  <button bindtap="addB">按我B+5</button>
+</view>

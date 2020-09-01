@@ -1,0 +1,7 @@
+<view>
+<!-- 组件就是自定义标签 -->
+<!-- 组件是类，相当于实例化了 -->
+  <my-test info="您好"></my-test>
+  <my-test info="HELLO"></my-test>
+  <my-test info="阿尼哈谁有"></my-test>
+</view>

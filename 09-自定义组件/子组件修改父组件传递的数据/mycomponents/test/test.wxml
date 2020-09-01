@@ -1,0 +1,9 @@
+<!--mycomponents/test/test.wxml-->
+<view>
+  我是Test组件
+  <view>我收到父组件传递的info是{{info}}</view>
+  <view>收到的m是：{{m}}</view>
+  <view>子组件自己的A是：{{a}}</view>
+  <button bindtap="addM">给父亲传给我的M+5</button>
+  <button bindtap="addA">给自己的A+10</button>
+</view>

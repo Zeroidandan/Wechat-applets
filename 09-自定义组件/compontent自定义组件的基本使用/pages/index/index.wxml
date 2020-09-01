@@ -1,0 +1,13 @@
+<view>
+<!-- 组件就是自定义标签 -->
+<!-- 组件是类，相当于实例化了 -->
+<!-- 
+  在index.json中定义组件名及引用路径
+    "usingComponents": {
+      "my-test":"../../mycomponents/test/test"
+    } 
+-->
+  <my-test info="您好"></my-test>
+  <my-test info="HELLO"></my-test>
+  <my-test info="阿尼哈谁有"></my-test>
+</view>
