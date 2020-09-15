@@ -1,11 +1,10 @@
 Page({
   data:{
-    m:10
+    a:10
   },
-  addM(e){
-    // console.log('被刺激了'),
-    this.setData({
-      m:this.data.m + e.detail.n,        
-    });
-  }
+ addA(){
+   this.setData({
+     a:this.data.a + 10
+   })
+ }
 });

@@ -1,7 +1,4 @@
 <view>
-<!-- 组件就是自定义标签 -->
-<!-- 组件是类，相当于实例化了 -->
-  <my-test m="{{m}}" info="您好" bind:addM="addM"></my-test>
-  <my-test m="{{m}}" info="HELLO" bind:addM="addM"></my-test>
-  <my-test m="{{m}}" info="阿尼哈谁有" bind:addM="addM"></my-test>
+  <my-test info="HELLO" a="{{a}}" bind:addA="addA"></my-test>
+  <my-test info="WORLD" a="{{a}}" bind:addA="addA"></my-test>
 </view>
